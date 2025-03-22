@@ -1,0 +1,151 @@
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f1e9; /* Light beige for dog-friendly vibe */
+    color: #4a3f35; /* Earthy brown */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #d9c2a7; /* Warm tan */
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #4a3f35;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #6b5e4b;
+}
+
+/* Paw Print Decoration */
+header::before {
+    content: "🐾";
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 2em;
+    opacity: 0.3;
+}
+
+header::after {
+    content: "🐾";
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 2em;
+    opacity: 0.3;
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.link-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.link-card:hover {
+    transform: translateY(-5px);
+}
+
+.link-card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.link-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #4a3f35;
+}
+
+.link-card p {
+    font-size: 1em;
+    color: #6b5e4b;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e07a5f; /* Playful coral */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #c95f43;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #d9c2a7;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #e07a5f;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .link-card h2 {
+        font-size: 1.3em;
+    }
+
+    .link-card img {
+        max-width: 150px;
+    }
+}
