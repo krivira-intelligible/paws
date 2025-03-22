@@ -1,50 +1,215 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Dog Shop - Affiliate Links</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <h1>AI Dog Shop</h1>
-        <p>Your AI-powered pup’s favorite finds!</p>
-    </header>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Manrope%3Awght%40400%3B500%3B700%3B800&family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+    <title>AI Pup Shop - Affiliate Links</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.usegalileo.ai/favicon.ico" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+      header::before {
+        content: "🐾";
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        font-size: 2em;
+        opacity: 0.3;
+      }
+      header::after {
+        content: "🐾";
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        font-size: 2em;
+        opacity: 0.3;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-slate-50 justify-between group/design-root overflow-x-hidden"
+      style='font-family: Manrope, "Noto Sans", "Comic Sans MS", sans-serif;'
+    >
+      <div>
+        <!-- Header -->
+        <header class="flex items-center bg-slate-50 p-4 pb-2 justify-between relative">
+          <h2 class="text-[#0e141b] text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12 pr-12">AI Pup Shop</h2>
+        </header>
 
-    <main>
-        <section class="links-grid">
-            <!-- Affiliate Link Cards with Images -->
-            <div class="link-card">
-                <img src="https://images.unsplash.com/photo-1605463857148-5d66b70e0e92?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Puzzle Feeder Toy">
-                <h2>Puzzle Feeder Toy</h2>
-                <p>Keep your dog entertained for hours.</p>
-                <a href="https://example.com/puzzle-feeder" target="_blank" class="btn">Shop Now</a>
+        <!-- Hero Section -->
+        <div class="@container">
+          <div class="@[480px]:p-4">
+            <div
+              class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+              style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://cdn.usegalileo.ai/sdxl10/6707ba26-c22f-4a5e-83c7-625ddcc1db31.png");'
+            >
+              <div class="flex flex-col gap-2 text-left">
+                <h1
+                  class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                >
+                  Shop the Best Pet Products
+                </h1>
+                <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                  Handpicked by your AI pup!
+                </h2>
+              </div>
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#1980e6] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+              >
+                <a href="https://example.com/shop" target="_blank" class="truncate">Shop Now</a>
+              </button>
             </div>
-            <div class="link-card">
-                <img src="https://images.unsplash.com/photo-1605460379962-2fc65b4a5b62?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Stylish Dog Sweater">
-                <h2>Stylish Dog Sweater</h2>
-                <p>Fashion-forward looks for your pup.</p>
-                <a href="https://example.com/dog-sweater" target="_blank" class="btn">Shop Now</a>
-            </div>
-            <div class="link-card">
-                <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Training Clicker">
-                <h2>Training Clicker</h2>
-                <p>Perfect for teaching new tricks.</p>
-                <a href="https://example.com/training-clicker" target="_blank" class="btn">Shop Now</a>
-            </div>
-            <div class="link-card">
-                <img src="https://images.unsplash.com/photo-1601758260950-827e1e868c43?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Grooming Kit">
-                <h2>Grooming Kit</h2>
-                <p>Keep your dog looking pawsitively great.</p>
-                <a href="https://example.com/grooming-kit" target="_blank" class="btn">Shop Now</a>
-            </div>
-        </section>
-    </main>
+          </div>
+        </div>
 
-    <footer>
-        <p>© 2025 AI Dog Shop | Follow us on <a href="https://instagram.com/yourhandle" target="_blank">Instagram</a></p>
-    </footer>
-</body>
+        <!-- Top Categories -->
+        <h3 class="text-[#0e141b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4" id="top-categories">Top Categories</h3>
+        <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+          <div class="flex flex-col gap-3 pb-3">
+            <a href="https://example.com/dog-toys" target="_blank">
+              <div
+                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                style='background-image: url("https://cdn.usegalileo.ai/sdxl10/d05b15c0-24f5-451e-99aa-24e174323bab.png");'
+                role="img"
+                aria-label="Dog Toys"
+              ></div>
+              <p class="text-[#0e141b] text-base font-medium leading-normal">Dog Toys</p>
+            </a>
+          </div>
+          <div class="flex flex-col gap-3 pb-3">
+            <a href="https://example.com/dog-beds" target="_blank">
+              <div
+                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                style='background-image: url("https://cdn.usegalileo.ai/sdxl10/ff751881-62fd-4ac0-b933-79ffb8f61ffc.png");'
+                role="img"
+                aria-label="Dog Beds"
+              ></div>
+              <p class="text-[#0e141b] text-base font-medium leading-normal">Dog Beds</p>
+            </a>
+          </div>
+          <div class="flex flex-col gap-3 pb-3">
+            <a href="https://example.com/dog-collars" target="_blank">
+              <div
+                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                style='background-image: url("https://cdn.usegalileo.ai/sdxl10/f8c36a88-99df-4e03-93f2-94dba0bf408f.png");'
+                role="img"
+                aria-label="Dog Collars"
+              ></div>
+              <p class="text-[#0e141b] text-base font-medium leading-normal">Dog Collars</p>
+            </a>
+          </div>
+          <div class="flex flex-col gap-3 pb-3">
+            <a href="https://example.com/dog-bowls" target="_blank">
+              <div
+                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                style='background-image: url("https://cdn.usegalileo.ai/sdxl10/3d3685f7-2ea1-4fb8-8e23-b05a193fc2bc.png");'
+                role="img"
+                aria-label="Dog Bowls"
+              ></div>
+              <p class="text-[#0e141b] text-base font-medium leading-normal">Dog Bowls</p>
+            </a>
+          </div>
+          <div class="flex flex-col gap-3 pb-3">
+            <a href="https://example.com/dog-food" target="_blank">
+              <div
+                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                style='background-image: url("https://cdn.usegalileo.ai/sdxl10/48d70d56-a3d6-4a3b-ad94-297004fa97b4.png");'
+                role="img"
+                aria-label="Dog Food"
+              ></div>
+              <p class="text-[#0e141b] text-base font-medium leading-normal">Dog Food</p>
+            </a>
+          </div>
+          <div class="flex flex-col gap-3 pb-3">
+            <a href="https://example.com/dog-treats" target="_blank">
+              <div
+                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                style='background-image: url("https://cdn.usegalileo.ai/sdxl10/e6933366-0a73-4210-91d5-752c8dbad8cf.png");'
+                role="img"
+                aria-label="Dog Treats"
+              ></div>
+              <p class="text-[#0e141b] text-base font-medium leading-normal">Dog Treats</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Popular Items -->
+        <h3 class="text-[#0e141b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Popular Items</h3>
+        <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+          <div class="flex flex-col gap-3 pb-3">
+            <a href="https://example.com/petsafe-drinkwell" target="_blank">
+              <div
+                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                style='background-image: url("https://cdn.usegalileo.ai/sdxl10/4d07cbd1-5374-4b93-a5e0-f8f5e9f5c01f.png");'
+                role="img"
+                aria-label="PetSafe Drinkwell Dog Water Fountain"
+              ></div>
+              <p class="text-[#0e141b] text-base font-medium leading-normal">PetSafe Drinkwell Dog Water Fountain</p>
+            </a>
+          </div>
+          <div class="flex flex-col gap-3 pb-3">
+            <a href="https://example.com/furbo-camera" target="_blank">
+              <div
+                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                style='background-image: url("https://cdn.usegalileo.ai/sdxl10/a0c7bd64-29f7-4e5d-ae9b-7021d9b5cc32.png");'
+                role="img"
+                aria-label="Furbo Dog Camera"
+              ></div>
+              <p class="text-[#0e141b] text-base font-medium leading-normal">Furbo Dog Camera</p>
+            </a>
+          </div>
+          <div class="flex flex-col gap-3 pb-3">
+            <a href="https://example.com/kong-toy" target="_blank">
+              <div
+                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                style='background-image: url("https://cdn.usegalileo.ai/sdxl10/14d51dbd-1278-45e0-9591-e20b60a33583.png");'
+                role="img"
+                aria-label="KONG - Classic Dog Toy"
+              ></div>
+              <p class="text-[#0e141b] text-base font-medium leading-normal">KONG - Classic Dog Toy</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Navigation (Simplified) -->
+      <div>
+        <div class="flex gap-2 border-t border-[#e7edf3] bg-slate-50 px-4 pb-3 pt-2">
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-[#0e141b]" href="#">
+            <div class="text-[#0e141b] flex h-8 items-center justify-center" data-icon="House" data-size="24px" data-weight="fill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#0e141b] text-xs font-medium leading-normal tracking-[0.015em]">Home</p>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#4e7397]" href="#top-categories">
+            <div class="text-[#4e7397] flex h-8 items-center justify-center" data-icon="MagnifyingGlass" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+              </svg>
+            </div>
+            <p class="text-[#4e7397] text-xs font-medium leading-normal tracking-[0.015em]">Categories</p>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#4e7397]" href="https://instagram.com/yourhandle" target="_blank">
+            <div class="text-[#4e7397] flex h-8 items-center justify-center" data-icon="InstagramLogo" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,0-12-12A12,12,0,0,0,192,76Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#4e7397] text-xs font-medium leading-normal tracking-[0.015em]">Instagram</p>
+          </a>
+        </div>
+        <div class="h-5 bg-slate-50"></div>
+      </div>
+    </div>
+  </body>
 </html>
